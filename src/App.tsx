@@ -1,10 +1,10 @@
 import { Children, useLayoutEffect, useState } from 'react';
-import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import { RouterProvider, createHashRouter } from 'react-router-dom';
 import { Layout } from './pages/layout';
 import { Login } from './pages/login';
 import { Chat } from './pages/chat';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: '/',
     element: <Layout />,
